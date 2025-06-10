@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Premier Supplies LTD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Premier Supplies LTD Logo" class="logo" />
+    <h1>Our Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="shop">
+    <div class="product">
+      <h2>57x40mm Plain White BPA-Free Thermal Till Rolls (20 Rolls)</h2>
+      <p>£3.56</p>
+      <button onclick="addToCart('57x40mm BPA-Free Till Rolls', 3.56)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <h2>80x75mm Plain White BPA-Free Thermal Till Rolls (20 Rolls)</h2>
+      <p>£13.23</p>
+      <button onclick="addToCart('80x75mm BPA-Free Till Rolls', 13.23)">Add to Cart</button>
+    </div>
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: £<span id="cart-total">0.00</span></p>
+    </div>
+  </main>
+  <footer>
+    <p>Contact us: Premiersuppliesltd@outlook.com | 07828676015</p>
+    <p>Instagram & Facebook: @premiersuppliesltd</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
